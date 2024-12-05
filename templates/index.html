@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>CL: Home</title>
+</head>
+<body style='background-image: url("/static/bd.jpg")'>
+    <style>
+        .j{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .floating-button {
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating-button:hover {
+  background: #005df4;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+}
+        p {
+            
+          color: grey;
+          font-size: 15px;
+          text-align: center;
+        }
+        .img{
+            border: 5px solid darkblue;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5%;
+
+        }
+        .img_1{
+            width: 200px;
+            align-items: center;
+
+        }
+        .plus{
+            
+            width: 5%;
+            margin-left: auto;
+        }
+        .img_2{
+            width: 50px;
+            align-items: center;
+        }
+        
+    </style>
+    <div class="img"><img class="img_1" src="{{ url_for('static', filename='logo.png') }}"></div>
+    
+    <div class="div_h1">
+    
+    <p>Добро пожаловать в магазин товаров и услуг, здесь вы можете найти товары на любой вкус!</p>
+    <p><a href="/all" class="floating-button">
+        Начать!
+    </a></p>
+    </div>
+    
+   
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <style>
+    
+    .container {
+     width: 80%;
+     margin: 40px auto;
+     text-align: center;
+    }
+    input {
+      background: #ffffff; /* Цвет фона */
+      width: 100%; /* Ширина */
+      height: 100px; /* Высота */
+      text-align: start;
+      font-size: 15px; /* Размер шрифта */
+    }
+    
+    .title {
+     font-size: 48px;
+     font-weight: bold;
+     margin-bottom: 20px;
+    }
+    
+    .subtitle {
+     font-size: 18px;
+     color: #666;
+    }
+    
+    .blocks {
+      justify-content: center;
+    }
+    
+    .block {
+     width: 50%;
+     margin-left: auto;
+     margin-right: auto;
+
+    }
+    
+    .submit {
+      display:block;
+      margin: auto;
+      width: 100%;
+    }
+    .block button {
+     background-color: #4CAF50;
+     color: #fff;
+     padding: 5% 5%;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     position: relative;
+     left: 50%;
+     transform: translate(-50%, 0);
+    }
+    .back {
+      color: #000000;
+    }
+    a {
+      text-decoration: none; /* Убираем подчёркивание */
+      color: rgb(255, 255, 255);
+     }
+    .block button:hover {
+     background-color: #3e8e41;
+    }
+   </style>
+    <title>CL: Add</title>
+</head>
+<body style='background-color: no-repeat url("/static/bd.jpg")'>
+<div class="block">
+<form method = "post">
+    <h1 class="title" style="text-align: center;">Добавить товар</h1>
+  <input type="text" name="Title" class="name" id ="title" placeholder = "Название">
+  <input type="text" name="Url_site" class="url" id ="url_site" placeholder = "Ваш @username">
+  <input name="About" class="about" id ="about" placeholder = "Описание товара или услуги"></input>
+  <input name="Pay" class="title" id ="pay" placeholder = "Цена товара"></input>
+  <button style="text-align: center;" type="submit" name="submit" class="block button" value="Add">Добавить</button>
+</form>
+</div>
+</body>
+</html>
